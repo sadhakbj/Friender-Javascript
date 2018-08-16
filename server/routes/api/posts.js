@@ -1,5 +1,5 @@
-/** Express router providing post related routes
- * @module routers/api/posts
+/** Express router providing post related routes.
+ * @module routes/api/posts
  * @requires express
  */
 
@@ -11,8 +11,8 @@ const routes = express.Router();
  * @desc Test post routes
  * @access Public
  */
-routes.get("/tests", (req, res) => {
-  return res.json({
+routes.get("/tests", (request, response) => {
+  return response.json({
     message: "Posts are working on"
   });
 });

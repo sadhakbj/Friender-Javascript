@@ -1,5 +1,5 @@
-/** Express router providing profile related routes
- * @module routers/api/profile
+/** Express router providing profile related routes.
+ * @module routes/api/profile
  * @requires express
  */
 
@@ -11,9 +11,10 @@ const routes = express.Router();
  * @desc Test post routes
  * @access Public
  */
-routes.get("/tests", (req, res) => {
-  return res.json({
-    message: "Profile are working on"
+routes.get("/tests", (request, response) => {
+  return response.json({
+    message: "Profile are working on",
+    status: 200
   });
 });
 
