@@ -9,7 +9,7 @@ const Schema = mongoose.Schema;
 /**
  * Define the profile schema.
  */
-const ProfileSchema = new ProfileSchema({
+const ProfileSchema = new Schema({
   user: {
     type: Schema.Types.ObjectId,
     ref: "users"
@@ -104,23 +104,23 @@ const ProfileSchema = new ProfileSchema({
   social: {
     youtube: {
       type: String,
-      required: true
+      required: false
     },
     twitter: {
       type: String,
-      required: true
+      required: false
     },
     facebook: {
       type: String,
-      required: true
+      required: false
     },
     linkedin: {
       type: String,
-      required: true
+      required: false
     },
     instagram: {
       type: String,
-      required: true
+      required: false
     }
   },
   created_at: {
